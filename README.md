@@ -336,7 +336,7 @@ If you use this pipeline in your research, please cite:
   title        = {gem5toMcPat: Power Profiling Pipeline for gem5 v25+ with McPAT},
   year         = {2026},
   publisher    = {GitHub},
-  url          = {https://github.com/YOUR_USERNAME/gem5toMcPat}
+  url          = {https://github.com/goran1989/gem5toMcPat}
 }
 ```
 
