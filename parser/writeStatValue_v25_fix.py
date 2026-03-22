@@ -572,33 +572,6 @@ def apply_resolved_to_xml(tree, resolved):
 
 
 # ============================================================
-# HOW TO INTEGRATE INTO YOUR Program.py
-# ============================================================
-#
-# Option 1: MINIMAL CHANGE
-# In your writeStatValue() function, after the line:
-#     print("Completed statistics mappings setup")
-# ADD these lines before the XML writing loop:
-#
-#     resolved = build_core_mappings_v25(stats, noCores)
-#     applied = apply_resolved_to_xml(tree, resolved)
-#     tree.write("config.xml")
-#     return
-#
-# Option 2: REPLACE THE WHOLE FUNCTION
-# Replace writeStatValue() with:
-#
-# def writeStatValue(mcpatTemplateFile):
-#     global stats, tree, noCores
-#     parent_map = {c: p for p in tree.getroot().iter() for c in p}
-#     resolved = build_core_mappings_v25(stats, noCores)
-#     applied = apply_resolved_to_xml(tree, resolved)
-#     tree.write("config.xml")
-#     print(f"\nOutput written to: config.xml")
-#
-
-
-# ============================================================
 # SELF-TEST: Verify mappings against known gem5 v25 stats
 # ============================================================
 if __name__ == "__main__":
