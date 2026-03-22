@@ -332,7 +332,7 @@ If you use this pipeline in your research, please cite:
 
 ```bibtex
 @misc{gem5tomcpat_v25,
-  author       = {Goran W. HamaAli},
+  author       = {Goran W. HamaAli and Diary R. Sulaiman},
   title        = {gem5toMcPat: Power Profiling Pipeline for gem5 v25+ with McPAT},
   year         = {2026},
   publisher    = {GitHub},
@@ -340,17 +340,8 @@ If you use this pipeline in your research, please cite:
 }
 ```
 
-This tool was developed as part of the following research:
+This tool was developed as part of the PhD program at Software and Informatics Department/College of Engineering/Salahaddin University-Erbil
 
-```bibtex
-@phdthesis{hamaali2026task,
-  author  = {Goran W. HamaAli},
-  title   = {Task Assignment and Scheduling in Multicore/Multiprocessor Real-Time Systems},
-  school  = {Salahaddin University, College of Engineering},
-  year    = {2026},
-  address = {Erbil, Iraq}
-}
-```
 
 ---
 
