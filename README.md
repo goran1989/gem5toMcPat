@@ -7,7 +7,7 @@
 
 **A complete, working pipeline to extract per-core power, energy, and execution time from gem5 v25+ simulations using McPAT — including the parser fix for gem5's new `board.processor.cores*` stat naming format.**
 
-> **Problem:** gem5 v25 introduced stdlib-based configs that produce stat names like `board.processor.cores0.core.commitStats0.numInsts`. The widely-used [Gem5toMcPat parser](https://github.com/Hardik44/Gem5toMcPat_parser) expects classic `system.cpu0.*` names — resulting in **zero runtime dynamic power** from McPAT.
+> **Problem:** gem5 v25 introduced stdlib-based configs that produce stat names like `board.processor.cores0.core.commitStats0.numInsts`. The widely-used [Gem5toMcPat parser](https://github.com/Hardik44/Gem5toMcPat_parser) expects classic `system.cpu0.*` names — resulting in **incompatibility issue** from McPAT.
 >
 > **Solution:** This repo provides a modified parser with a v25 stat-name translation layer, automation scripts, and a step-by-step workflow to go from benchmark ELFs → gem5 stats → McPAT power → energy tables.
 
